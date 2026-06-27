@@ -2,11 +2,11 @@
 .SUFFIXES: .pic .ms .pdf .ps .eps .chem .svg
 .DEFAULT: .ms.pdf .ps.pdf .eps.pdf .chem.ms .svg.eps
 
-default: essay.pdf essay-with-cover.pdf
-	cd natural-selection/ && $(MAKE)
-	cd too-much-modality && $(MAKE)
+default: essay.pdf
 
-URI = https://github.com/siglun/term-paper-spring-2026/blob/main/essay.pdf
+#	cd too-much-modality && $(MAKE)
+
+URI = https://github.com/siglun/statistical-mechanics-of-knowledge/essay.pdf
 PAPER = -dpaper=a4 -P-pa4
 OTHERS =  ./references.text ./tmac/dropcap.tmac \
 	Makefile fitch-macros.pic  eqn-definitions.ms \
