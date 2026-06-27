@@ -14,3 +14,32 @@ but currently postgraduate student in theoretical philosophy at Lund University,
 .vs 12
 In this note I blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
 .AE
+.SH
+Introduction
+.LP
+Bertrand Russell.
+Blah blah blah blah blah blah blah blah.
+Gettier blah blah blah blah blah blah blah.
+Lewis blah blah blah blah blah blah blah.
+Kripke blah blah blah blah blah blah blah.
+.SH
+Dynamics
+.LP
+Blah blah blah blah blah blah blah.
+Blah blah blah blah blah blah blah.
+Blah blah blah blah blah blah blah.
+Blah blah blah blah blah blah blah.
+.SH
+Statistics
+.LP
+Blah blah blah blah blah blah blah.
+Blah blah blah blah blah blah blah.
+Blah blah blah blah blah blah blah.
+Blah blah blah blah blah blah blah.
+.SH
+Conclusions
+.LP
+Blah blah blah blah blah blah blah.
+Blah blah blah blah blah blah blah.
+Blah blah blah blah blah blah blah.
+Blah blah blah blah blah blah blah.
