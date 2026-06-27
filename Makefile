@@ -29,34 +29,10 @@ OTHERS =  ./references.text ./tmac/dropcap.tmac \
 qr.eps:
 	qrencode -l H -v 1 -s 3 -d300 -t EPS -o qr.eps $(URI)
 
-essay-with-cover.pdf:
-	pdfunite cover-page.pdf essay.pdf essay-with-cover.pdf
-
 clean:
 	rm -f *~ *.eps
 
-squareroot-problem.pdf: squareroot-problem.ms $(OTHERS)
-
-anti-vax-gettier-case.pdf: anti-vax-gettier-case.ms
-
-essay-with-cover.pdf: cover-page.pdf essay.pdf 
-essay.pdf: essay.ms essay-intro.ms essay-popper.ms essay-senescence.ms \
-	essay-heredity.ms essay-historicism.ms  essay-williamson.ms \
-	life-tables/life-tables-males.text \
-	life-tables/life-tables-females.text  \
-	life-tables/survivorship-curves.ms \
-	dna/Aminoacids_table.eps \
-	dna/mutations.ms natural-selection/the-price-formula.ms \
-	natural-selection/polymorphism.grap kolmogorov.pic \
-	mendels-laws.pic essay-real-numbers.ms \
-	natural-selection/appendix-a.ms \
-	natural-selection/appendix-b.ms \
-	natural-selection/price-example-0.75.text \
-	natural-selection/price-example-0.25.text \
-	natural-selection/price-example.grap $(OTHERS)
-
-dna/mutations.ms: dna/mutations.chem
-dna/Aminoacids_table.eps: dna/Aminoacids_table.svg 
+essay.pdf: essay.ms $(OTHERS)
 
 # Remember
 #
