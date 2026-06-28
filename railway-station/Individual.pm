@@ -1,28 +1,23 @@
 package Individual;
 
-
 use Carp;
 use strict;
-use Element;
-use vars qw ($AUTOLOAD);
 
-##########################
-#
-# Primitives for handling of textnodes
-#
+use vars qw ($AUTOLOAD);
 
 sub new {
     my $class   = shift;
+    my $id      = shift;
     my $arrived = shift;
     my $queue   = shift;
-
 
     my $self = {};
  
     bless $self, $class;
-
+    
+    $self->{'id'}     = $id;
     $self->{'arrived'}= $arrived;
-    $self->{'queue'}  = $value;
+    $self->{'queue'}  = $queue;
 
     $self;
 }
@@ -42,3 +37,5 @@ sub AUTOLOAD {
     }
 }
 
+
+1;
