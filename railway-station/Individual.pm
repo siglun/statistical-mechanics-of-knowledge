@@ -22,6 +22,34 @@ sub new {
     $self;
 }
 
+sub departure {
+    my $self   = shift;
+
+    if(@_) {
+	return $self->{'departure'}    = shift;
+    } else {
+	return $self->{'departure'};
+    }
+
+}
+
+sub in_time {
+    my $self   = shift;
+
+
+    print STDERR $self->{'departure'} . " " .
+	$self->{'arrived'} . " " .
+	$self->{'get_there'} . "\n";
+
+    if($self->{'departure'} - $self->{'arrived'} > $self->{'get_there'}) {
+	return 1;
+    } else {
+	return 0;
+    }
+
+}
+
+
 sub AUTOLOAD {
     my $self=shift;
  
