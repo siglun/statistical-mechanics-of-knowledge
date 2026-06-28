@@ -49,6 +49,31 @@ sub in_time {
 
 }
 
+sub do_believe {
+    my $self  = shift;
+    my $clock = shift;
+    my $time  = shift;
+
+    my $lower = 5;
+    my $upper = 3;
+    my $peak  = 4.5;
+
+    my $max   = 0.8;
+
+    my $threshold = 0;
+    if($clock <= $peak) {
+	if($clock > $lower) {
+	    $threshold = $max/($peak-$clock);
+	} else {
+	    $threshold = 0;
+	}
+    } else {
+
+    }
+	
+    
+}
+
 
 sub AUTOLOAD {
     my $self=shift;
