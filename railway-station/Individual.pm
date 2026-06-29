@@ -37,9 +37,9 @@ sub in_time {
     my $self   = shift;
 
 
-    print STDERR $self->{'departure'} . " " .
-	$self->{'arrived'} . " " .
-	$self->{'get_there'} . "\n";
+#    print STDERR $self->{'departure'} . " " .
+#	$self->{'arrived'} . " " .
+#	$self->{'get_there'} . "\n";
 
     if($self->{'departure'} - $self->{'arrived'} > $self->{'get_there'}) {
 	return 1;

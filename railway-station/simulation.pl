@@ -35,14 +35,14 @@ for(my $time = $start_time; $time <= $end_time; $time++) {
 
     }
 
-#    print "$time\t$new_persons\t$person\n";    
+    print "$time\t$new_persons\t$person\n";    
 }
 
 while(my $ind = shift(@individuals)) {
     if($ind->in_time()) {
-	print "individuals\t" . $ind->id() . "\t" .  $ind->arrived() . "\n";
+#	print "individuals\t" . $ind->id() . "\t" .  $ind->arrived() . "\n";
     } else {
-	print STDERR "missed train\t" . $ind->id() . "\t" .  $ind->arrived() ."\n";
+#	print STDERR "missed train\t" . $ind->id() . "\t" .  $ind->arrived() ."\n";
     }
 
 }
