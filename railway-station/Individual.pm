@@ -54,23 +54,23 @@ sub do_believe {
     my $clock = shift;
     my $time  = shift;
 
-    my $lower = 5;
-    my $upper = 3;
-    my $peak  = 4.5;
+    my $tlower = $clock-5;
+    my $tupper = $clock+3;
 
-    my $max   = 0.8;
+    my $pmax   = 0.8;
 
     my $threshold = 0;
-    if($clock <= $peak) {
-	if($clock > $lower) {
-	    $threshold = $max/($peak-$clock);
-	} else {
-	    $threshold = 0;
-	}
+    if($time <= $tlower) {
+	$threshold = 0;
+    } elsif ($tlower < $time && $time <= $clock) {
+	$threshold = $pmax * ($time - $tlower)/($clock - $tlower);
+    } elsif ($time > $clock && $time <= $tupper)  {
+	$threshold = $pmax * ($tupper - $time) / ($tupper - $clock);
     } else {
-
+	$threshold = 0;
     }
-	
+
+    return $threshold;
     
 }
 
