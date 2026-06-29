@@ -54,6 +54,16 @@ sub do_believe {
     my $clock = shift;
     my $time  = shift;
 
+    my $threshold = $self->threshold($time,$clock);
+
+    return (rand() <= $threshold);
+}
+
+sub threshold {
+    my $self  = shift;
+    my $clock = shift;
+    my $time  = shift;
+
     my $tlower = $clock-5;
     my $tupper = $clock+3;
 
